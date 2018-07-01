@@ -1,6 +1,5 @@
 # QuizAppInventors
-Quiz based on famous inventors
-Quiz App – Inventors Theme
+Quiz App – Inventors Theme.
 This app has seven questions relating to famous inventors. It consist of one text entry, one checkbox entry and several radio groups. 
 On completion, the user will press the button to get a final score(this will be displayed as a toast message) out of 14. 
 Each question counts 2 points. The solution will also be displayed next to each question.
