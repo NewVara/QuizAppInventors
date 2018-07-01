@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#f1bdbd">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quiz1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="1. What topics of rivalry existed between the 2 inventors, Nikola Tesla and Thomas Edison?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/check_box_ac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Alternating Current" />
+
+                    <CheckBox
+                        android:id="@+id/check_box_ic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Induced Current" />
+
+                    <CheckBox
+                        android:id="@+id/check_box_dc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Direct Current" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/correct_answer_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="2. Who invented the antibiotic, Penicillin?"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_one_pasteur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick1"
+                        android:text="Louis Pasteur" />
+
+                    <RadioButton
+                        android:id="@+id/radio_one_flemming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick1"
+                        android:text="Alexander Flemming" />
+
+                    <RadioButton
+                        android:id="@+id/radio_one_curie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick1"
+                        android:text="Marie Curie" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/correct_answer_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="3. Harry Coover invented a substance called cyanoacrylate.What is it better known as?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_two_glue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick2"
+                        android:text="Super Glue" />
+
+                    <RadioButton
+                        android:id="@+id/radio_two_fibre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick2"
+                        android:text="Carbon Fibre" />
+
+                    <RadioButton
+                        android:id="@+id/radio_two_plastic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick2"
+                        android:text="Plastic" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/correct_answer_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="4. Gordon Moore noticed transistors per square inch(integrated circuits) double every how many years?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_three_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick3"
+                        android:text="1 year" />
+
+                    <RadioButton
+                        android:id="@+id/radio_three_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick3"
+                        android:text="2 years" />
+
+                    <RadioButton
+                        android:id="@+id/radio_three_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick3"
+                        android:text="3 years" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/correct_answer_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="5. Who is the only US President to invent and patent
+something(device was used to remove ships stuck on sand bars)?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_four_lincoln"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick4"
+                        android:text="Abraham Lincoln" />
+
+                    <RadioButton
+                        android:id="@+id/radio_four_roosevelt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick4"
+                        android:text="Theodore Roosevelt" />
+
+                    <RadioButton
+                        android:id="@+id/radio_four_jefferson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick4"
+                        android:text="Thomas Jefferson" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/correct_answer_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="6. What was Da Vinci's 'long lost' painting
+that recently sold for 450 million dollars?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radio_group5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_five_woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick5"
+                        android:text="Head of a Woman" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_five_mundi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick5"
+                        android:text="Salvator Mundi" />
+
+                    <RadioButton
+                        android:id="@+id/radio_five_lisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="radioButtonClick5"
+                        android:text="Mona Lisa" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/correct_answer_six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="7. Alexander Graham bell invented the telephone,
+                though he was also know for a device that transmitted sound on a beam of light. What was it called?"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edit_text_solution"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Answer here"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/correct_answer_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:onClick="summary"
+                android:text="Your Score" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
